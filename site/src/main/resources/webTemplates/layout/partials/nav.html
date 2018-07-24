@@ -1,5 +1,5 @@
 <nav class="navbar navbar-default navbar-top navbar-fixed-top" id="sectionsNav" xmlns:th="http://www.w3.org/1999/xhtml"
-     xmlns:blc="http://www.w3.org/1999/xhtml">
+     xmlns:blc="http://www.w3.org/1999/xhtml" blc:cache="true" cacheTimeout="1500" cacheKey="allodepannage_home_nav">
     <div class="container-fluid">
         <div class="collapse navbar-collapse nav-wrapper">
             <!-- Search Bar -->
@@ -47,7 +47,8 @@
                 <!-- Anonymous Customer Actions -->
                 <th:block th:if="${customer.anonymous}">
                     <li>
-                        <a th:href="@{/login}" th:utext="#{home.login}">Login</a>
+<!--                         <a th:href="@{/login}" th:utext="#{home.login}">Login</a> -->
+                        <a th:href="@{/login}">Nous Rejoindre</a>
                     </li>
                 </th:block>
 
